@@ -1,0 +1,107 @@
+.eventBanner img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slash::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100px;
+  top: 130px;
+  right: 85px;
+  border-bottom: 1px solid #000000;
+  transform: rotate(-60deg);
+}
+
+@media (max-width: 992px) {
+  .slash::after {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 100px;
+    top: -10px;
+    right: 265px;
+    border-bottom: 3px solid #000000;
+    transform: rotate(-60deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .slash::after {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 100px;
+    top: -10px;
+    right: 205px;
+    border-bottom: 3px solid #000000;
+    transform: rotate(-60deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .slash::after {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 100px;
+    top: -20%;
+    right: 55%;
+    border-bottom: 2px solid #000000;
+    transform: rotate(-60deg);
+  }
+}
+
+.date h2,
+.date h3 {
+  @include font-size(48px);
+}
+
+@media (max-width: 1200px) {
+  .date h2,
+  .date h3 {
+    @include font-size(32px);
+  }
+}
+
+.date h4 {
+  @include font-size(32px);
+}
+
+.info h3 {
+  @include font-size(60px);
+  letter-spacing: 5px;
+}
+
+.info p {
+  @include font-size(22px);
+}
+
+.info .content {
+  background-color: #ebeae8;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.borderHead {
+  border-bottom: 3px solid #000000;
+}
+
+.ticket table th {
+  width: 25%;
+}
+
+.ticket table th.tableSm {
+  width: 25%;
+}
+
+.orderBtn {
+  border: 2px solid black;
+}
+
+.orderBtn:hover {
+  background-color: black;
+  color: $primary;
+}

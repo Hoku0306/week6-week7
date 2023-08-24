@@ -1,0 +1,135 @@
+.orderProgress ul .fontNsif {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.orderProgress ul li span {
+  width: 48px;
+  height: 48px;
+  background-color: #f3f1e5;
+}
+
+@media (max-width: 992px) {
+  .orderProgress ul li span {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.orderProgress ul .firstSection::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  background-color: #000;
+  left: 40%;
+  margin: auto;
+  z-index: -1;
+}
+
+@media (max-width: 1400px) {
+  .orderProgress ul .firstSection::after {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .orderProgress ul .firstSection::after {
+    width: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .orderProgress ul .firstSection::after {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .orderProgress ul .firstSection::after {
+    width: 240px;
+  }
+}
+
+@media (max-width: 525px) {
+  .orderProgress ul .firstSection::after {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 485px) {
+  .orderProgress ul .firstSection::after {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 445px) {
+  .orderProgress ul .firstSection::after {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+  .orderProgress ul .firstSection::after {
+    max-width: 150px;
+  }
+}
+
+ul li span.active {
+  background-color: #000000;
+  color: $primary;
+}
+
+.firstStep h2 {
+  @include font-size(48px);
+  line-height: 69px;
+}
+
+.firstStep a,
+.secondStep a,
+.thirdStep a {
+  width: 66%;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media (max-width: 768px) {
+  .firstStep a,
+  .secondStep a,
+  .thirdStep a {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.userInfo a {
+  color: gray;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.secondStep .icofont-check-circled {
+  font-size: 48px;
+}
+
+.secondStep .textRed {
+  color: #c96464;
+}
+
+.secondStep .textGray {
+  color: #4f4f4f;
+}
+
+.break {
+  padding: 8px;
+  margin: 0 -20px;
+}
+
+.paymentDetail {
+  color: #4f4f4f;
+}
+
+.paymentDetail span {
+  color: #c96464;
+}

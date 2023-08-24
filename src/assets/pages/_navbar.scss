@@ -1,0 +1,52 @@
+nav .register {
+  font-family: "Noto Serif TC", serif;
+  font-weight: bold;
+}
+
+nav .container img {
+  width: 53px;
+  height: 53px;
+}
+
+@media (max-width: 767px) {
+  nav .container img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav form {
+    width: 207px;
+  }
+}
+
+nav.navbar .container {
+  justify-content: space-around;
+}
+
+nav .navDropdown {
+  position: absolute;
+  background-color: #f3f1e5;
+  border-bottom: 3px solid #000;
+  width: 100%;
+  top: 100%;
+  z-index: 1;
+}
+
+nav .btn-close {
+  top: 20%;
+  right: 2%;
+}
+
+nav .signInBtn {
+  width: 187px;
+}
+
+nav .registerBtn {
+  color: #030303;
+}
+
+nav .registerBtn:hover {
+  color: #9c9e18;
+}
